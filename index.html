@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Discover La Visite, an exceptional virtual art gallery and Parisian architectural tour. Explore our collections from Renaissance to contemporary art.">
+  <title>La Visite — Virtual Art Gallery & Immersive Experience</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/avif" href="assets/images/favicon.avif">
+</head>
+
+<body class="page">
+
+  <header class="header" id="page-header">
+    <a href="#" class="header__logo" id="logo-link" aria-label="La Visite Home">
+      L<span class="header__logo-gold">V</span>
+    </a>
+    
+    <button class="header__toggle" id="menu-trigger" popovertarget="nav-menu" aria-label="Open navigation menu">
+      <span class="header__toggle-icon">☰</span>
+    </button>
+
+    <nav class="nav" id="nav-menu" popover aria-label="Main menu">
+      <button class="nav__close" id="menu-close" popovertarget="nav-menu" popovertargetaction="hide"
+        aria-label="Close navigation menu">
+        &times;
+      </button>
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link nav__link--active" href="#" id="nav-home">Home</a></li>
+        <li class="nav__item"><a class="nav__link" href="#exhibitions" id="nav-exhibitions">Exhibitions</a></li>
+        <li class="nav__item"><a class="nav__link" href="#about" id="nav-about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main" id="main-content">
+
+    <section class="hero" id="hero-section">
+      <div class="hero__content">
+        <span class="hero__badge" id="hero-badge">4K Virtual Experience</span>
+        <h1 class="hero__title" id="hero-title">The Secret Louvre,<br>At Home</h1>
+        <p class="hero__subtitle" id="hero-subtitle">
+          Step through the virtual doors of a timeless palace. Explore exclusive wings closed to the public and admire
+          masterpieces digitized in ultra-high definition.
+        </p>
+        <div class="hero__actions">
+          <a href="#exhibitions" class="button button--primary" id="hero-cta-primary">Discover the Wings</a>
+          <a href="#about" class="button button--secondary" id="hero-cta-secondary">About Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="exhibitions" id="exhibitions">
+      <div class="exhibitions__header">
+        <h2 class="exhibitions__title" id="exhibitions-title">The Exhibition Wings</h2>
+        <p class="exhibitions__subtitle" id="exhibitions-subtitle">
+          Each space offers an immersive journey into a unique artistic universe.
+        </p>
+      </div>
+
+      <div class="exhibitions__grid" id="exhibitions-grid">
+        <article class="card" id="card-renaissance">
+          <div class="card__image-wrapper">
+            <span class="card__tag">Richelieu Wing</span>
+            <img src="assets/images/renaissance.avif"
+              alt="Exhibition of Renaissance oil paintings under warm glowing gallery spotlights" class="card__image"
+              loading="lazy">
+          </div>
+          <div class="card__content">
+            <h3 class="card__title">Renaissance Mysteries</h3>
+            <p class="card__description">
+              Dive into the heart of 16th-century chiaroscuro. A brand new collection of oil paintings revealing the
+              secrets of Italian and Flemish masters.
+            </p>
+          </div>
+        </article>
+
+        <article class="card" id="card-modern">
+          <div class="card__image-wrapper">
+            <span class="card__tag">Sully Wing</span>
+            <img src="assets/images/modern.avif"
+              alt="Vibrant abstract contemporary oil painting inside a large minimalist modern gallery room"
+              class="card__image" loading="lazy">
+          </div>
+          <div class="card__content">
+            <h3 class="card__title">Modern Abstraction</h3>
+            <p class="card__description">
+              Let yourself be carried away by the power of contemporary colors and textures. A visual exploration at the
+              border of reality and imagination.
+            </p>
+          </div>
+        </article>
+
+        <article class="card" id="card-sculpture">
+          <div class="card__image-wrapper">
+            <span class="card__tag">Marly Court</span>
+            <img src="assets/images/sculpture.avif"
+              alt="Neoclassical Greek and Roman marble statues illuminated by sunset light under a glass atrium"
+              class="card__image" loading="lazy">
+          </div>
+          <div class="card__content">
+            <h3 class="card__title">The Breath of Stone</h3>
+            <p class="card__description">
+              Wander virtually through a sun-drenched atrium, surrounded by classical Greek and Roman marbles sculpted
+              to absolute perfection.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about__container">
+        <span class="about__badge">Our Vision</span>
+        <h2 class="about__title" id="about-title">The Virtual Museum Revolution</h2>
+        <div class="about__content">
+          <p class="about__paragraph">
+            La Visite was born from the bold ambition to merge the splendor of historic Parisian architecture with the
+            pinnacle of digital imaging. We believe that physical distance or busy crowds should never stand in the way
+            of aesthetic emotion.
+          </p>
+          <blockquote class="about__quote">
+            "Art does not reproduce the visible; rather, it makes visible. Our mission is to project this universal
+            vision into every home."
+          </blockquote>
+          <p class="about__paragraph">
+            Using cinema-grade 360-degree photogrammetric capture technologies, every brushstroke, every micro-crack in
+            ancient marble, and every golden reflection on baroque moldings are rendered with striking, lifelike
+            realism.
+          </p>
+          <div class="about__signature">
+            <strong>Jean-Luc Valois</strong>
+            <span class="about__signature-title">Chief Curator, La Visite</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="page-footer-container">
+    <div class="footer__container">
+
+      <div class="footer__brand">
+        <a href="#" class="footer__logo">La Visite</a>
+        <p class="footer__description">
+          A new way to explore the world's artistic heritage through a high-end web experience.
+        </p>
+      </div>
+
+      <div class="footer__nav">
+        <h3 class="footer__nav-title">Menu</h3>
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Home</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#exhibitions">Exhibitions</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#about">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__newsletter">
+        <h3 class="footer__newsletter-title">The Museum Gazette</h3>
+        <p class="footer__newsletter-text">
+          Receive our alerts for virtual openings and new collections previews.
+        </p>
+        <form class="footer__form" id="newsletter-form" action="#" method="POST"
+          onsubmit="event.preventDefault(); alert('Thank you for subscribing to the Gazette!');">
+          <input class="footer__input" type="email" id="newsletter-email" name="newsletter-email"
+            placeholder="Your email address" aria-label="Email address for newsletter subscription" required>
+          <input class="footer__button" type="submit" id="newsletter-submit" value="Subscribe">
+        </form>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">&copy; 2026 La Visite SAS. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
